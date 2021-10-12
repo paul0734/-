@@ -9,7 +9,11 @@ public class Coco{
 
         input = sc.nextLine().trim();//trim은 앞뒤 공백 제거
 
-        System.out.println(input.split(" ").length);
+        if (input.isEmpty()) {//입력된 문자가 없다면
+			System.out.println(0);
+		} else {
+			System.out.println(input.split(" ").length);
+		}
     }
 
 }
